@@ -10,7 +10,6 @@
     __strong FSCNBase **entries;
 }
 
-- (void)dealloc;
 - (void)encodeWithCoder:(NSCoder *)coder;
 - (id)initWithCoder:(NSCoder *)coder;
 - (id)initWithEntries:(NSArray *)theElements;

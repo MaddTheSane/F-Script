@@ -38,7 +38,6 @@
 - (id)copyWithZone:(NSZone *)zone;
 - (NSUInteger)count;
 - (void *)dataPtr;
-- (void)dealloc;
 - (NSString *)descriptionLimited:(NSUInteger)nbElem;
 - (NSUInteger)indexOfObject:(id)anObject inRange:(NSRange)range identical:(BOOL)identical;
 - (id)init;

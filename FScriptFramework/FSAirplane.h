@@ -27,7 +27,6 @@
 
 ////////////////////////////////// Programmer methods ////////////////////////////////
 
-- (void)dealloc;
 - (NSString *)description;
 - (void)encodeWithCoder:(NSCoder *)aCoder;
 - (id)initWithCoder:(NSCoder *)aDecoder;

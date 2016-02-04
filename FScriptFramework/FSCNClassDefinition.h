@@ -15,7 +15,6 @@
 
 - (NSString *) className;
 - (NSArray  *) civarNames; 
-- (void) dealloc;
 - (void) encodeWithCoder:(NSCoder *)coder;
 - (id) initWithCoder:(NSCoder *)coder;
 - (id) initWithClassName:(NSString *)theClassName superclassName:(NSString *)theSuperclassName civarNames:(NSArray *)theCIvarNames ivarNames:(NSArray *)theIvarNames methods:(NSArray *)theMethods;

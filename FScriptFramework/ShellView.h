@@ -36,7 +36,6 @@ typedef enum {DECOMPOSE,NO_DECOMPOSE} T_parser_mode;
 }
 
 - (id)commandHandler;
-- (void)dealloc;
 - (id)initWithFrame:(NSRect)frameRect;
 - (id)initWithFrame:(NSRect)frameRect prompt:(NSString *)thePrompt historySize:(NSInteger)theHistorySize commandHandler:(id)theCommandHandler;
 - (void)keyDown:(NSEvent *)theEvent;

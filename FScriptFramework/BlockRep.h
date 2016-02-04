@@ -47,7 +47,6 @@
 - (FSBlockCompilationResult *)compilForBlock:(FSBlock *)block;   // May cause self to be deallocated.
 - (id)compilForBlock:(FSBlock *)block onError:(FSBlock *)errorBlock; // May raise. May cause self to be deallocated.
 - (id)copyWithZone:(NSZone *)zone;
-- (void)dealloc;
 - (void)encodeWithCoder:(NSCoder *)aCoder;
 - (FSInterpreterResult *)executeWithArguments:(NSArray *)arguments block:(FSBlock *)block;
 - (id)initWithCoder:(NSCoder *)aDecoder;

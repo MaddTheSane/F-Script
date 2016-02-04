@@ -77,7 +77,6 @@ struct FSContextValueWrapper
 - (id)copy;
 - (id)copyWithZone:(NSZone *)zone;
 
-- (void)dealloc;
 
 - (void) didSendDeallocToSymbolAtIndex:(struct FSContextIndex)index;
 

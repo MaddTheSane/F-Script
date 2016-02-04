@@ -21,7 +21,7 @@ struct res_scan
 @interface FSCompiler:NSObject
 {
   struct res_scan rs;             // current result of the lexical parsing (scanning)
-  __strong const char *string;    // string to compile
+  const char *string;             // string to compile
   int32_t string_index;           // in order to scan the string to compile 
   int32_t token_first_char_index; // index in the string of the first character of the current token
   int32_t string_size;            // size of the string to compile 
@@ -31,13 +31,12 @@ struct res_scan
   NSInteger errorLastCharIndex;
 }  
 
-+ (id)compiler;
++ (instancetype)compiler;
 + (FSMethod *)dummyDeallocMethodForClassNamed:(NSString *)className;
 + (BOOL)isValidIdentifier:(NSString *)str;
 + (NSString *)stringFromSelector:(SEL)selector;
 + (SEL)selectorFromString:(NSString *)selectorStr;
 
-- (void) dealloc;
 - (id)init;
 - (FSCompilationResult *) compileCode:(const char *)utf8str withParentSymbolTable:(FSSymbolTable *)symbol_table;
 - (FSCompilationResult *) compileCodeForBlock:(const char *)utf8str withParentSymbolTable:(FSSymbolTable *)symbol_table;

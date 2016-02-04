@@ -11,7 +11,6 @@
 }
 
 - (NSString *) className;
-- (void) dealloc;
 - (void) encodeWithCoder:(NSCoder *)coder;
 - (id) initWithCoder:(NSCoder *)coder;
 - (id) initWithClassName:(NSString *)theClassName methods:(NSArray *)theMethods;

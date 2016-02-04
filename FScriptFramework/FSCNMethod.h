@@ -11,7 +11,6 @@
     BOOL isClassMethod;
 }
 
-- (void)dealloc;
 - (void)encodeWithCoder:(NSCoder *)coder;
 - (id)initWithCoder:(NSCoder *)coder;
 - (id)initWithMethod:(FSMethod *)theMethod isClassMethod:(BOOL)classMethod;

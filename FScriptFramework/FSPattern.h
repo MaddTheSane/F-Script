@@ -25,7 +25,6 @@
 - (FSPattern *)nextPattern;
 - (void) setNextPattern:(FSPattern *)theNextPattern;
 
-- (void)dealloc;
 - (void)encodeWithCoder:(NSCoder *)coder;
 - (id)initWithCoder:(NSCoder *)coder;
 

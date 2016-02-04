@@ -11,7 +11,6 @@
 
 + (FSObjectBrowser *)objectBrowserWithRootObject:(id)object interpreter:(FSInterpreter *)interpreter;
 - (void) browseWorkspace;
-- (void)dealloc;
 - (FSObjectBrowser *)initWithRootObject:(id)object interpreter:(FSInterpreter *)interpreter;
 - (BOOL)worksWhenModal;
 

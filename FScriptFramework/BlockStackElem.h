@@ -16,7 +16,6 @@
 + (BlockStackElem *)blockStackElemWithBlock:(FSBlock *)theBlock errorStr:(NSString *)theErrorStr firstCharIndex:(NSInteger)first lastCharIndex:(NSInteger)last;
 
 - (FSBlock *)block;
-- (void)dealloc;
 - (void)encodeWithCoder:(NSCoder *)aCoder;
 - (NSString *)errorStr;
 - (NSInteger) firstCharIndex;

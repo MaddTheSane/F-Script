@@ -25,7 +25,6 @@ extern NSString *FS_Block_keyOfSetValueForKeyMessage(FSBlock *block);
 - (id) compilOnError:(FSBlock *)errorBlock; // May raise
 - (id)copy;
 - (id)copyWithZone:(NSZone *)zone;
-- (void)dealloc;
 - (void)encodeWithCoder:(NSCoder *)aCoder;
 - (FSInterpreterResult *)executeWithArguments:(NSArray *)arguments;
 - (id) initWithBlockRep:(BlockRep *)theBlockRep;

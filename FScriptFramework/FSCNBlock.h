@@ -12,7 +12,6 @@
     BlockRep *blockRep;
 }
 
-- (void)dealloc;
 - (void)encodeWithCoder:(NSCoder *)coder;
 - (id)initWithCoder:(NSCoder *)coder;
 - (id)initWithBlockRep:(BlockRep *)theBlockRep;

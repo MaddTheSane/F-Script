@@ -9,7 +9,6 @@
     FSCNBase *argument;
 }
 
-- (void)dealloc;
 - (void)encodeWithCoder:(NSCoder *)aCoder;
 - (id)initWithCoder:(NSCoder *)aDecoder;
 - (id)initWithReceiver:(FSCNBase *)theReceiver selectorString:(NSString *)theSelectorString pattern:(FSPattern *)thePattern argument:(FSCNBase *)theArgument;

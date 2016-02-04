@@ -13,7 +13,7 @@
   next=[n retain];
   return self;
 }
-- (void)dealloc;
+- (void)dealloc
 {
   [from release];
   [to release];

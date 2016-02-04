@@ -41,7 +41,6 @@ enum ArrayRepType {FS_ID, DOUBLE, EMPTY, BOOLEAN, FETCH_REQUEST};
 - (BOOL)containsObject:(id)anObject;
 - (id)copyWithZone:(NSZone *)zone;
 - (NSUInteger)count;
-- (void)dealloc;
 - (NSString *)description;
 - (NSString *)descriptionWithLocale:(NSDictionary *)locale;
 - (NSString *)descriptionWithLocale:(NSDictionary *)locale indent:(NSUInteger)level;

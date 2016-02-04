@@ -10,7 +10,6 @@
   FScriptTextView *editor;
 }
 
-- (void) dealloc;
 - (NSText *) fieldEditor:(BOOL)createFlag forObject:(id)anObject;
 
 @end

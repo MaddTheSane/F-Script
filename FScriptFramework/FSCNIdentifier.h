@@ -11,7 +11,6 @@
     struct FSContextIndex locationInContext;
 }
 
-- (void)dealloc;
 - (void)encodeWithCoder:(NSCoder *)coder;
 - (id)initWithCoder:(NSCoder *)coder;
 - (id)initWithIdentifierString:(NSString *)theIdentifierString locationInContext:(struct FSContextIndex)theLocationInContext;

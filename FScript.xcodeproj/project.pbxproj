@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55A74C711C63FA1E0073811B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230B6189F9A2E002C5B6A /* Cocoa.framework */; };
+		55B5ABB21C6404AC00EABE3F /* InterfaceBuilderKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55B5ABB11C6404AC00EABE3F /* InterfaceBuilderKit.framework */; };
 		8F0B64C905C5370D0099180D /* FSConsole.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0B64C805C5370D0099180D /* FSConsole.nib */; };
 		8F0B64CA05C5370D0099180D /* FSConsole.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0B64C805C5370D0099180D /* FSConsole.nib */; };
 		8F0B64CC05C5370E0099180D /* FSConsole.nib in Resources */ = {isa = PBXBuildFile; fileRef = 8F0B64C805C5370D0099180D /* FSConsole.nib */; };
@@ -3690,6 +3692,7 @@
 		0CD4E39E00D7DFE17BE9C1BD /* FSSystem.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; path = FSSystem.h; sourceTree = "<group>"; };
 		0CD4E39F00D7DFE17BE9C1BD /* FSSystem.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = FSSystem.m; sourceTree = "<group>"; };
 		0CD4E3A000D7DFE17BE9C1BD /* TestFS.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TestFS.m; sourceTree = "<group>"; };
+		55B5ABB11C6404AC00EABE3F /* InterfaceBuilderKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InterfaceBuilderKit.framework; path = Library/Frameworks/InterfaceBuilderKit.framework; sourceTree = DEVELOPER_DIR; };
 		66029E580161E0650055708C /* KTestManager.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = KTestManager.h; sourceTree = "<group>"; };
 		66029E590161E0650055708C /* KTestManager.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = KTestManager.m; sourceTree = "<group>"; };
 		8F0B64C805C5370D0099180D /* FSConsole.nib */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = FSConsole.nib; path = FScriptFramework/FSConsole.nib; sourceTree = SOURCE_ROOT; };
@@ -3755,7 +3758,7 @@
 		8F658B2705C9694F0040FB24 /* FSNSFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNSFont.h; sourceTree = "<group>"; };
 		8F658B2805C9694F0040FB24 /* FSNSFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNSFont.m; sourceTree = "<group>"; };
 		8F6597B50C37F061006CDCA0 /* FScriptMenuItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FScriptMenuItem.png; path = FScriptIBPlugin/FScriptMenuItem.png; sourceTree = "<group>"; };
-		8F6597D90C381103006CDCA0 /* FSInterpreterView.classdescription */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FSInterpreterView.classdescription; path = FScriptIBPlugin/FSInterpreterView.classdescription; sourceTree = "<group>"; };
+		8F6597D90C381103006CDCA0 /* FSInterpreterView.classdescription */ = {isa = PBXFileReference; explicitFileType = text.plist; fileEncoding = 4; name = FSInterpreterView.classdescription; path = FScriptIBPlugin/FSInterpreterView.classdescription; sourceTree = "<group>"; };
 		8F66F85404666E8100AFC811 /* FSNSMutableArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNSMutableArray.h; sourceTree = "<group>"; };
 		8F66F85504666E8100AFC811 /* FSNSMutableArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNSMutableArray.m; sourceTree = "<group>"; };
 		8F6DA6D1055FC6980050409A /* Info-FSTest2_2.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Info-FSTest2_2.plist"; sourceTree = "<group>"; };
@@ -4063,6 +4066,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B5ABB21C6404AC00EABE3F /* InterfaceBuilderKit.framework in Frameworks */,
+				55A74C711C63FA1E0073811B /* Cocoa.framework in Frameworks */,
 				E29F5F9219FD9E6A00AD90CF /* ScriptingBridge.framework in Frameworks */,
 				E29F5F8619FD9C3200AD90CF /* ExceptionHandling.framework in Frameworks */,
 			);
@@ -4566,6 +4571,7 @@
 		0CD4E2FB00D7DD4D7BE9C1BD = {
 			isa = PBXGroup;
 			children = (
+				55B5ABB11C6404AC00EABE3F /* InterfaceBuilderKit.framework */,
 				E29F5F9319FD9F0400AD90CF /* Other Frameworks */,
 				F5F1A9F4022E9A96011160FE /* F-Script */,
 				0CD4E30D00D7DFE17BE9C1BD /* FScriptFramework */,
@@ -4580,6 +4586,7 @@
 				0CD4E2FC00D7DDB47BE9C1BD /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		0CD4E2FC00D7DDB47BE9C1BD /* Products */ = {
 			isa = PBXGroup;
@@ -6853,7 +6860,7 @@
 		0CD4E2FA00D7DD4D7BE9C1BD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0720;
 			};
 			buildConfigurationList = 8F2881FC08F9C040005B3C5A /* Build configuration list for PBXProject "FScript" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -8856,8 +8863,9 @@
 				OTHER_LIBTOOL_FLAGS = "$(value) ";
 				OTHER_REZFLAGS = "";
 				PRINCIPAL_CLASS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.fscriptframework;
 				PRODUCT_NAME = FScript;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = NO;
@@ -8885,8 +8893,9 @@
 				OTHER_LIBTOOL_FLAGS = "$(value) ";
 				OTHER_REZFLAGS = "";
 				PRINCIPAL_CLASS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.fscriptframework;
 				PRODUCT_NAME = FScript;
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = NO;
@@ -8990,8 +8999,9 @@
 				INFOPLIST_FILE = "Info-FScript.plist";
 				OTHER_LDFLAGS = "-lffi";
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.fscriptapp;
 				PRODUCT_NAME = "F-Script";
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -9026,8 +9036,9 @@
 				INFOPLIST_FILE = "Info-FScript.plist";
 				OTHER_LDFLAGS = "-lffi";
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.fscriptapp;
 				PRODUCT_NAME = "F-Script";
-				SDKROOT = macosx10.7;
+				SDKROOT = macosx;
 				WARNING_CFLAGS = "-Wmost";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
@@ -9038,9 +9049,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CURRENT_PROJECT_VERSION = 2.3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_ENABLE_CPP_RTTI = NO;
@@ -9079,7 +9090,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CURRENT_PROJECT_VERSION = 2.3;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
@@ -9128,6 +9138,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.FScriptIBPluginFramework;
 				PRODUCT_NAME = FScriptIBPlugin;
 				WRAPPER_EXTENSION = ibplugin;
 				ZERO_LINK = NO;
@@ -9157,6 +9168,7 @@
 					"-framework",
 					AppKit,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.FScriptIBPluginFramework;
 				PRODUCT_NAME = FScriptIBPlugin;
 				WRAPPER_EXTENSION = ibplugin;
 				ZERO_LINK = NO;
@@ -9183,8 +9195,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = "-lffi";
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.fscriptapp;
 				PRODUCT_NAME = "F-Script";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -9220,8 +9233,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = "-lffi";
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.fscriptapp;
 				PRODUCT_NAME = "F-Script";
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				WARNING_CFLAGS = "-Wmost";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
@@ -9248,8 +9262,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_LDFLAGS = "-lffi";
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.fscriptapp;
 				PRODUCT_NAME = "F-Script";
-				SDKROOT = macosx10.9;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -9285,8 +9300,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				OTHER_LDFLAGS = "-lffi";
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.fscriptapp;
 				PRODUCT_NAME = "F-Script";
-				SDKROOT = macosx10.9;
+				SDKROOT = macosx;
 				WARNING_CFLAGS = "-Wmost";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
@@ -9317,8 +9333,9 @@
 				OTHER_LIBTOOL_FLAGS = "$(value) ";
 				OTHER_REZFLAGS = "";
 				PRINCIPAL_CLASS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.fscriptframework;
 				PRODUCT_NAME = FScript;
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = NO;
@@ -9347,8 +9364,9 @@
 				OTHER_LIBTOOL_FLAGS = "$(value) ";
 				OTHER_REZFLAGS = "";
 				PRINCIPAL_CLASS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.fscriptframework;
 				PRODUCT_NAME = FScript;
-				SDKROOT = macosx10.8;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = NO;
@@ -9379,8 +9397,9 @@
 				OTHER_LIBTOOL_FLAGS = "$(value) ";
 				OTHER_REZFLAGS = "";
 				PRINCIPAL_CLASS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.fscriptframework;
 				PRODUCT_NAME = FScript;
-				SDKROOT = macosx10.9;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = NO;
@@ -9409,8 +9428,9 @@
 				OTHER_LIBTOOL_FLAGS = "$(value) ";
 				OTHER_REZFLAGS = "";
 				PRINCIPAL_CLASS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.fscriptframework;
 				PRODUCT_NAME = FScript;
-				SDKROOT = macosx10.9;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = NO;
@@ -9437,8 +9457,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_LDFLAGS = "-lffi";
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.fscriptapp;
 				PRODUCT_NAME = "F-Script";
-				SDKROOT = macosx10.10;
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
 			};
@@ -9474,8 +9495,9 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_LDFLAGS = "-lffi";
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.fscriptapp;
 				PRODUCT_NAME = "F-Script";
-				SDKROOT = macosx10.10;
+				SDKROOT = macosx;
 				WARNING_CFLAGS = "-Wmost";
 				WRAPPER_EXTENSION = app;
 				ZERO_LINK = NO;
@@ -9506,8 +9528,9 @@
 				OTHER_LIBTOOL_FLAGS = "$(value) ";
 				OTHER_REZFLAGS = "";
 				PRINCIPAL_CLASS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.fscriptframework;
 				PRODUCT_NAME = FScript;
-				SDKROOT = macosx10.10;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = NO;
@@ -9536,8 +9559,9 @@
 				OTHER_LIBTOOL_FLAGS = "$(value) ";
 				OTHER_REZFLAGS = "";
 				PRINCIPAL_CLASS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.fscript.fscriptframework;
 				PRODUCT_NAME = FScript;
-				SDKROOT = macosx10.10;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = framework;
 				ZERO_LINK = NO;

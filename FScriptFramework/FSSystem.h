@@ -25,7 +25,6 @@
 
 - (id)copy;
 - (id)copyWithZone:(NSZone *)zone;
-- (void)dealloc;
 - (id)init:(id)theSys;
 
 ///////////////////////////////////// USER METHODS ////////////////////////

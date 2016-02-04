@@ -12,7 +12,6 @@
   NSString *source;
 }
 
-- (void)dealloc;
 - (id)initForReadingWithData:(NSData *)theData loaderEnvironmentSymbolTable:(FSSymbolTable*)theLoaderEnvironmentSymbolTable symbolTableForCompiledCodeNode:theSymbolTableForCompiledCodeNode;
 - (FSSymbolTable *)loaderEnvironmentSymbolTable;
 - (void)setSource:(NSString*)theSource;

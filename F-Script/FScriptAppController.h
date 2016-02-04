@@ -9,7 +9,7 @@
 @class NSButton;
 @class NSApplication;
 
-@interface FScriptAppController : NSObject
+@interface FScriptAppController : NSObject <NSApplicationDelegate>
 {
   IBOutlet FSInterpreterView *interpreterView;  
   IBOutlet NSPanel *infoPanel;                  

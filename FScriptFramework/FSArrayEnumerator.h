@@ -14,7 +14,6 @@
   BOOL iterationCompleted;
 }
 
-- (void) dealloc;
 - (FSArrayEnumerator *)initWithArray:(FSArray *)theArray reverse:(BOOL)reverse;
 - (id)nextObject;
 - (FSArray *)allObjects;

@@ -944,6 +944,7 @@ id sendMsgPattern(id receiver, SEL selector, NSUInteger argumentCount, id *args,
         
         args[0] = [receiver arrayRep];
         //((SEL)args[1]) = wiredSelector;
+				//sel_getName(wiredSelector);
         args[1] = (id)wiredSelector;
 
         r = sendMsgNoPattern(args[0], wiredSelector, argumentCount, args, msgContext, nil);

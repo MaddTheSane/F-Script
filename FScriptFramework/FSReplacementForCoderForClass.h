@@ -11,7 +11,6 @@
 }
 
 - (id)awakeAfterUsingCoder:(NSCoder *)aCoder;
-- (void)dealloc;
 - (void)encodeWithCoder:(NSCoder *)aCoder;
 - (id)initWithClass:(Class)theClass;
 - (id)initWithCoder:(NSCoder *)aDecoder;

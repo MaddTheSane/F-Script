@@ -17,7 +17,6 @@ enum CompilationResult_type {OK,ERROR};
 
 + (id)compilationResultWithType:(enum CompilationResult_type)theType errorMessage:(NSString *)theErrorMessage errorFirstCharacterIndex:(NSInteger)first errorLastCharacterIndex:(NSInteger)last code:(FSCNBase *)theCode;
 
-- (void)dealloc;
 - (id)initWithType:(enum CompilationResult_type)theType errorMessage:(NSString *)theErrorMessage errorFirstCharacterIndex:(NSInteger)first errorLastCharacterIndex:(NSInteger)last code:(FSCNBase *)theCode;
  
 @end

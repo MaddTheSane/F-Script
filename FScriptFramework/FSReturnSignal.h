@@ -16,7 +16,6 @@
 + (FSReturnSignal *)returnSignalWithSymbolTable:(FSSymbolTable *)theSymbolTable result:(id)theResult;
 
 - (FSBlock *) block;
-- (void) dealloc;
 - (FSReturnSignal *) initWithBlock:(FSBlock *)theBlock result:(id)theResult;
 - (FSReturnSignal *) initWithSymbolTable:(FSSymbolTable *)theSymbolTable result:(id)theResult;
 

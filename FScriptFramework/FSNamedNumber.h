@@ -11,7 +11,6 @@
 
 + (id)namedNumberWithDouble:(double)val name:(NSString *)theName;
 - (id)initWithDouble:(double)val name:(NSString *)theName;  //designated initializer
-- (void) dealloc;
 - (NSString *)description;
 
 @end

@@ -30,7 +30,6 @@ store is removed.
 }
 
 - (id)addStr:(NSString *)str; // adds a string
-- (void)dealloc;
 - (void)encodeWithCoder:(NSCoder *)coder;
 - (id)goToFirst;              // move the cursor to the most recently added string
 - (id)goToLast;               // move the cursor to the least recently added string               

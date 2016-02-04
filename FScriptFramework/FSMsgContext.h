@@ -18,7 +18,6 @@
 
 + (FSMsgContext *) msgContext;
 
-- (void)dealloc;
 - (id)init;
 - (void)prepareForMessageWithReceiver:(id)receiver selector:(SEL)selector; // May raise
 - (NSInteger)unsuportedArgumentIndex;

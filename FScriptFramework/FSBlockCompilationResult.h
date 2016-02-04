@@ -18,7 +18,6 @@ enum FSBlockCompilationResultType {FSOKBlockCompilationResultType, FSErrorBlockC
 
 + (id)blockCompilationResultWithType:(enum FSBlockCompilationResultType)theType errorMessage:(NSString *)theErrorMessage errorFirstCharacterIndex:(NSInteger)first errorLastCharacterIndex:(NSInteger)last;
 
-- (void)dealloc;
 - (id)initWithType:(enum FSBlockCompilationResultType)theType errorMessage:(NSString *)theErrorMessage errorFirstCharacterIndex:(NSInteger)first errorLastCharacterIndex:(NSInteger)last;
 
 @end

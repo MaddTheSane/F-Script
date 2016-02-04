@@ -38,9 +38,6 @@
 - (id)addSubnode:(CompiledCodeNode *)subnode;
 - (long)firstCharIndex;
 - (long)lastCharIndex;
-- (id)copy;
-- (id)copyWithZone:(NSZone *)zone;
-- (void)dealloc;
 - (void)encodeWithCoder:(NSCoder *)aCoder;
 - (CompiledCodeNode *)getSubnode:(unsigned)pos;
 //- (Array *)getListSubnode;

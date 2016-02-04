@@ -74,7 +74,6 @@
 + (id)numberWithDouble:(double)val;
 
 - (id)copyWithZone:(NSZone *)zone;
-- (void) dealloc;
 - (double) doubleValue;
 - (BOOL) hasFrac_bool; // deprecated
 //- (unsigned int) hash;

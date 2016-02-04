@@ -31,10 +31,10 @@ void FSConstantsInitialization(NSMutableDictionary *d)
   if (NSRollbackMergePolicy)                   [d setObject:NSRollbackMergePolicy                   forKey:@"NSRollbackMergePolicy"]; 
  
   [d setObject:[NSNumber numberWithUnsignedLongLong:NSNotFound]   forKey:@"NSNotFound"];
-  [d setObject:[NSNumber numberWithLong:NSIntegerMax]             forKey:@"NSIntegerMax"];
-  [d setObject:[NSNumber numberWithLong:NSIntegerMin]             forKey:@"NSIntegerMin"];
-  [d setObject:[NSNumber numberWithUnsignedLong:NSUIntegerMax]    forKey:@"NSUIntegerMax"];
-  [d setObject:[NSNumber numberWithLong:NSUndefinedDateComponent] forKey:@"NSUndefinedDateComponent"];
+  [d setObject:@(NSIntegerMax)							forKey:@"NSIntegerMax"];
+  [d setObject:@(NSIntegerMin)							forKey:@"NSIntegerMin"];
+  [d setObject:@(NSUIntegerMax)							forKey:@"NSUIntegerMax"];
+  [d setObject:@(NSDateComponentUndefined)	forKey:@"NSUndefinedDateComponent"];
   
 #ifdef __LP64__
   // 64-bit code

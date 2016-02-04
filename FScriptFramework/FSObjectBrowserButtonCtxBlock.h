@@ -9,7 +9,6 @@
   FSBlock *master; 
 }
 
-- (void)dealloc;
 - (BlockInspector *)inspector;  
 - (void)setMaster:(FSBlock *)theMaster;
 

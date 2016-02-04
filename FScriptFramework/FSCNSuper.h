@@ -10,7 +10,6 @@
   BOOL isInClassMethod;
 }
 
-- (void)dealloc;
 - (id)initWithCoder:(NSCoder *)coder;
 - (id)initWithLocationInContext:(struct FSContextIndex)theLocationInContext className:(NSString *)theClassName isInClassMethod:(BOOL)incm;
 - (void)encodeWithCoder:(NSCoder *)coder;

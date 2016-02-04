@@ -10,7 +10,6 @@
     FSCNBase *right;
 }
 
-- (void)dealloc;
 - (void)encodeWithCoder:(NSCoder *)aCoder;
 - (id)initWithCoder:(NSCoder *)aDecoder;
 - (id)initWithLeft:(FSCNBase *)l right:(FSCNBase *)r;
