@@ -463,7 +463,12 @@ FSNumber *numberWithDouble(double val)
 - (id)initWithUnsignedInt:(unsigned int)val {return [self initWithDouble:val];}
 - (id)initWithUnsignedLong:(unsigned long)val {return [self initWithDouble:val];}
 - (id)initWithUnsignedShort:(unsigned short)val {return [self initWithDouble:val];}
-   
+
+- (id)initWithInteger:(NSInteger)val {return [self initWithDouble:val];}
+- (id)initWithUnsignedInteger:(NSUInteger)val {return [self initWithDouble:val];}
+- (id)initWithLongLong:(long long)val {return [self initWithDouble:val];}
+- (id)initWithUnsignedLongLong:(unsigned long long)val {return [self initWithDouble:val];}
+
 - (BOOL) isEqual:anObject
 {
   // direct isa access was used for better performance.
@@ -480,7 +485,7 @@ FSNumber *numberWithDouble(double val)
 
 - (NSUInteger)retainCount  { return retainCount; }
 
-- (void)release  { if (--retainCount == 0) [self dealloc]; }  
+- (oneway void)release  { if (--retainCount == 0) [self dealloc]; }
 
 
 ///////////////// NSValue Class cluster primitives methods are implemented here

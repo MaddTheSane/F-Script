@@ -3388,8 +3388,6 @@
 		E29F5F1219FD98F600AD90CF /* DiscRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230D4189F9A7A002C5B6A /* DiscRecording.framework */; };
 		E29F5F1319FD98F600AD90CF /* DiscRecordingUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230D5189F9A7A002C5B6A /* DiscRecordingUI.framework */; };
 		E29F5F1419FD98F600AD90CF /* DiskArbitration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230D6189F9A7A002C5B6A /* DiskArbitration.framework */; };
-		E29F5F1519FD98F600AD90CF /* DrawSprocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230D7189F9A7A002C5B6A /* DrawSprocket.framework */; };
-		E29F5F1619FD98F600AD90CF /* DVComponentGlue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230D8189F9A7A002C5B6A /* DVComponentGlue.framework */; };
 		E29F5F1719FD98F600AD90CF /* DVDPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA2230D9189F9A7A002C5B6A /* DVDPlayback.framework */; };
 		E29F5F1819FD98F600AD90CF /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DBA31C161CA57C0035A675 /* EventKit.framework */; };
 		E29F5F1919FD98F600AD90CF /* ExceptionHandling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22316F189F9AD3002C5B6A /* ExceptionHandling.framework */; };
@@ -3439,7 +3437,6 @@
 		E29F5F4819FD98F600AD90CF /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223102189F9A99002C5B6A /* Quartz.framework */; };
 		E29F5F4919FD98F600AD90CF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223103189F9A99002C5B6A /* QuartzCore.framework */; };
 		E29F5F4A19FD98F600AD90CF /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223104189F9A99002C5B6A /* QuickLook.framework */; };
-		E29F5F4B19FD98F600AD90CF /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223105189F9A99002C5B6A /* QuickTime.framework */; };
 		E29F5F4C19FD98F600AD90CF /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223106189F9A9A002C5B6A /* Ruby.framework */; };
 		E29F5F4D19FD98F600AD90CF /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DBA327161CA65A0035A675 /* SceneKit.framework */; };
 		E29F5F4E19FD98F600AD90CF /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223108189F9A9A002C5B6A /* ScreenSaver.framework */; };
@@ -4480,8 +4477,6 @@
 				E29F5F1219FD98F600AD90CF /* DiscRecording.framework in Frameworks */,
 				E29F5F1319FD98F600AD90CF /* DiscRecordingUI.framework in Frameworks */,
 				E29F5F1419FD98F600AD90CF /* DiskArbitration.framework in Frameworks */,
-				E29F5F1519FD98F600AD90CF /* DrawSprocket.framework in Frameworks */,
-				E29F5F1619FD98F600AD90CF /* DVComponentGlue.framework in Frameworks */,
 				E29F5F1719FD98F600AD90CF /* DVDPlayback.framework in Frameworks */,
 				E29F5F1819FD98F600AD90CF /* EventKit.framework in Frameworks */,
 				E29F5F1919FD98F600AD90CF /* ExceptionHandling.framework in Frameworks */,
@@ -4531,7 +4526,6 @@
 				E29F5F4819FD98F600AD90CF /* Quartz.framework in Frameworks */,
 				E29F5F4919FD98F600AD90CF /* QuartzCore.framework in Frameworks */,
 				E29F5F4A19FD98F600AD90CF /* QuickLook.framework in Frameworks */,
-				E29F5F4B19FD98F600AD90CF /* QuickTime.framework in Frameworks */,
 				E29F5F4C19FD98F600AD90CF /* Ruby.framework in Frameworks */,
 				E29F5F4D19FD98F600AD90CF /* SceneKit.framework in Frameworks */,
 				E29F5F4E19FD98F600AD90CF /* ScreenSaver.framework in Frameworks */,

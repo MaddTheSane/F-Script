@@ -305,7 +305,7 @@
 //  id selectedObject = [self selectedObject];
   id block=[interpreter objectForIdentifier:title found:&found];
   if (!found) {
-    NSInteger choice=NSRunAlertPanel(@"Undefined block", [NSString stringWithFormat:@"Could not find block with name %@", title], @"Cancel", @"Remove Menu Entry", nil);
+    NSInteger choice=NSRunAlertPanel(@"Undefined block", @"Could not find block with name %@", @"Cancel", @"Remove Menu Entry", nil, title);
     if (choice) {
       [[self class] removeCustomBlockMenuIdentifier:title];
     }

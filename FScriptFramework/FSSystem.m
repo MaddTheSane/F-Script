@@ -247,8 +247,8 @@ static BOOL loadNonKeyedArchives;
 {
   NSOpenPanel *openPanel = [NSOpenPanel openPanel];
   
-  if([openPanel runModal] == NSOKButton) 
-    return [self load:[openPanel filename]];
+  if([openPanel runModal] == NSModalResponseOK)
+    return [self load:[[openPanel URL] path]];
   else  // cancel button
     return [FSVoid fsVoid];
 }  
