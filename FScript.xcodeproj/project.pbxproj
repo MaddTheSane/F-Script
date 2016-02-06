@@ -3440,7 +3440,6 @@
 		E29F5F4C19FD98F600AD90CF /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223106189F9A9A002C5B6A /* Ruby.framework */; };
 		E29F5F4D19FD98F600AD90CF /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2DBA327161CA65A0035A675 /* SceneKit.framework */; };
 		E29F5F4E19FD98F600AD90CF /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223108189F9A9A002C5B6A /* ScreenSaver.framework */; };
-		E29F5F4F19FD98F600AD90CF /* Scripting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA223109189F9A9A002C5B6A /* Scripting.framework */; };
 		E29F5F5019FD98F600AD90CF /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22310A189F9A9A002C5B6A /* ScriptingBridge.framework */; };
 		E29F5F5119FD98F600AD90CF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22310B189F9A9A002C5B6A /* Security.framework */; };
 		E29F5F5219FD98F600AD90CF /* SecurityFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA22310C189F9A9A002C5B6A /* SecurityFoundation.framework */; };
@@ -4529,7 +4528,6 @@
 				E29F5F4C19FD98F600AD90CF /* Ruby.framework in Frameworks */,
 				E29F5F4D19FD98F600AD90CF /* SceneKit.framework in Frameworks */,
 				E29F5F4E19FD98F600AD90CF /* ScreenSaver.framework in Frameworks */,
-				E29F5F4F19FD98F600AD90CF /* Scripting.framework in Frameworks */,
 				E29F5F5019FD98F600AD90CF /* ScriptingBridge.framework in Frameworks */,
 				E29F5F5119FD98F600AD90CF /* Security.framework in Frameworks */,
 				E29F5F5219FD98F600AD90CF /* SecurityFoundation.framework in Frameworks */,
