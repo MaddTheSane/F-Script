@@ -14,8 +14,8 @@
   void *cPointer;
 }
   
-+ (FSGenericPointer *) allocateCollectable:(NSUInteger)size;
-+ (FSGenericPointer *) allocateCollectable:(NSUInteger)size options:(NSUInteger)options;
++ (FSGenericPointer *) allocateCollectable:(NSUInteger)size NS_DEPRECATED(10_4, 10_8, NA, NA);
++ (FSGenericPointer *) allocateCollectable:(NSUInteger)size options:(NSUInteger)options NS_DEPRECATED(10_4, 10_8, NA, NA);
 + (FSGenericPointer *) malloc:(size_t)size;
 + (FSObjectPointer *)  objectPointer;
 + (FSObjectPointer *)  objectPointer:(size_t)count;

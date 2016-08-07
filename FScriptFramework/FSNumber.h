@@ -9,7 +9,7 @@
 @class FSBoolean;
 @class FSBlock;
  
-@interface FSNumber:NSNumber
+@interface FSNumber:NSNumber <NSCopying, NSCoding>
 { 
 @public
   NSUInteger retainCount;
@@ -77,7 +77,7 @@
 - (double) doubleValue;
 - (BOOL) hasFrac_bool DEPRECATED_ATTRIBUTE; // deprecated
 //- (unsigned int) hash;
-- (id) initWithCoder:(NSCoder *)aDecoder;
+- (id) initWithCoder:(NSCoder *)aDecoder;// NS_DESIGNATED_INITIALIZER;
 - (id)initWithChar:(char)val;
 - (id)initWithUnsignedChar:(unsigned char)val;
 - (id)initWithShort:(short)val;
@@ -91,7 +91,7 @@
 - (id)initWithInteger:(NSInteger)val;
 - (id)initWithUnsignedInteger:(NSUInteger)val;
 - (id)initWithFloat:(float)val;
-- (id)initWithDouble:(double)val NS_DESIGNATED_INITIALIZER; // designated initializer
+- (id)initWithDouble:(double)val;// NS_DESIGNATED_INITIALIZER; // designated initializer
 - (id)initWithBool:(BOOL)val;
 - (BOOL) isEqual:(id)anObject;
 
