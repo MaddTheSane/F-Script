@@ -17,8 +17,8 @@
 
 @class NSPortCoder;
 
-id FSNumberClass;
-id NSNumberClass; 
+Class FSNumberClass;
+Class NSNumberClass;
 
 void __attribute__ ((constructor)) initializeFSNumber(void) 
 {
@@ -387,7 +387,7 @@ FSNumber *numberWithDouble(double val)
    return NSAllocateObject(self, 0, NULL);
 }             
                                        
-+ (id)allocWithZone:(NSZone *)zone
++ (id)allocWithZone:(__unused NSZone *)zone
 {
   return NSAllocateObject(self, 0, NULL);
 }
@@ -399,7 +399,7 @@ FSNumber *numberWithDouble(double val)
 
 - (id)copy                        {retainCount++; return self; }
 
-- (id)copyWithZone:(NSZone *)zone {retainCount++; return self; }
+- (id)copyWithZone:(__unused NSZone *)zone {retainCount++; return self; }
 
 - (void)dealloc
 {
@@ -446,7 +446,7 @@ FSNumber *numberWithDouble(double val)
 
 - (id)initWithDouble:(double)val // designated initializer
 {
-  if ((self = [super init]))
+  if ((self = [super initWithInt:0]))
   {
     retainCount = 1;
     value = val;
@@ -475,7 +475,7 @@ FSNumber *numberWithDouble(double val)
   // this is now deprecated in the modern runtime as features such as tagged pointers may break.
   // also note that object_getClass returns the swizzled classname in the case of KVO activation.
   // if this proves to be a problem then -class is the answer as it returns the unswizzled class.
-  if (anObject && object_getClass(anObject) == FSNumberClass) 
+  if (anObject && [anObject isMemberOfClass:FSNumberClass])
     return value == ((FSNumber *)anObject)->value;
   else 
     return [super isEqual:anObject];

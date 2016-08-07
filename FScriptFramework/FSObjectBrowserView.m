@@ -97,7 +97,7 @@ static FSObjectBrowserCell *addRowToMatrix(NSMatrix *matrix)
 }
 
 
-NSInteger FSCompareClassNamesForAlphabeticalOrder(NSString *className1, NSString *className2, void *context)
+NSInteger FSCompareClassNamesForAlphabeticalOrder(NSString *className1, NSString *className2, __unused void *context)
 {  
   if ([className1 hasPrefix:@"%"] && ![className2 hasPrefix:@"%"])
     return NSOrderedDescending;
@@ -108,7 +108,7 @@ NSInteger FSCompareClassNamesForAlphabeticalOrder(NSString *className1, NSString
 }
 
 
-static NSInteger FSCompareMethodsNamesForAlphabeticalOrder(NSString *m1, NSString *m2, void *context)
+static NSInteger FSCompareMethodsNamesForAlphabeticalOrder(NSString *m1, NSString *m2, __unused void *context)
 {  
   if ([m1 hasPrefix:@"_"] && ![m2 hasPrefix:@"_"])
     return NSOrderedDescending;
@@ -884,7 +884,7 @@ static NSMutableArray *customButtons = nil;
     else if (nbarg == 0)
     {
       // NSBrowserCell *cell;
-      [self sendMessageTo:selectedObject selectorString:selectedString arguments:[NSArray array] putResultInMatrix:matrix];
+      [self sendMessageTo:selectedObject selectorString:selectedString arguments:[FSArray array] putResultInMatrix:matrix];
     
       /*if (cell = [matrix cellAtRow:0 column:0])
       {
@@ -963,7 +963,9 @@ static NSMutableArray *customButtons = nil;
       [f setAction:@selector(performClick:)];
       [f selectTextAtIndex:0]; 
       
-      [NSApp beginSheet:argumentsWindow modalForWindow:[self window] modalDelegate:self didEndSelector:NULL contextInfo:NULL];
+      [[self window] beginSheet:argumentsWindow completionHandler:^(__unused NSModalResponse returnCode) {
+        
+      }];
     }
   }
   [browser tile]; 
@@ -987,14 +989,14 @@ static NSMutableArray *customButtons = nil;
 
 - (void) cancelArgumentsSheetAction:(id)sender
 {
-  [NSApp endSheet:[sender window]];
+  [[self window] endSheet:[sender window]];
   [[sender window] close];
   [[browser matrixInColumn:[browser lastColumn]-1] deselectAllCells];
 }
 
 - (void) cancelNameSheetAction:(id)sender
 {
-  [NSApp endSheet:[sender window]];
+  [[self window] endSheet:[sender window]];
   [[sender window] close];
 }
 
@@ -1547,8 +1549,10 @@ static NSMutableArray *customButtons = nil;
   [cancelButton setTarget:self];
   [cancelButton setKeyEquivalent:@"\e"];
   [[nameSheet contentView] addSubview:cancelButton];
-   
-  [NSApp beginSheet:nameSheet modalForWindow:[self window] modalDelegate:self didEndSelector:NULL contextInfo:NULL];
+  
+  [[self window] beginSheet:nameSheet completionHandler:^(__unused NSModalResponse returnCode) {
+    
+  }];
   [field selectText:nil];
 }
 
@@ -1556,7 +1560,7 @@ static NSMutableArray *customButtons = nil;
 {
   if ([[sender stringValue] length] == 0)
   {
-    [NSApp endSheet:[sender window]];
+    [[self window] endSheet:[sender window]];
     [[sender window] close];
   }
   else if ([[sender stringValue] isEqualToString:@"sys"])
@@ -1568,7 +1572,7 @@ static NSMutableArray *customButtons = nil;
   else if ([FSCompiler isValidIdentifier:[sender stringValue]])
   {
     [interpreter setObject:[self selectedObject] forIdentifier:[sender stringValue]];
-    [NSApp endSheet:[sender window]];
+    [[self window] endSheet:[sender window]];
     [[sender window] close];
   }
   else

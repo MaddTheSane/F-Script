@@ -89,7 +89,7 @@
   if (operandDouble > NSUIntegerMax)
     FSExecError([NSString stringWithFormat:@"argument of method \"enlist:\" must be less or equal to %lu",(unsigned long)NSUIntegerMax]);
   
-  if (r = [[[FSArray alloc] initFilledWith:self count:operandDouble] autorelease])
+  if ((r = [[[FSArray alloc] initFilledWith:self count:operandDouble] autorelease]))
     return r;
   else
     FSExecError(@"not enough memory");

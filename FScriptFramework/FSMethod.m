@@ -38,10 +38,10 @@ void __attribute__ ((constructor)) initializeFScriptClassSystem(void)
     // We use the folowing NSMapTable (instead of an NSMutableDictionary) because we don't want our keys to be sent messages when inserted
     // or looked up in the table, as they might not be yet functional (i.e., not yet registered with objc_registerClassPair()) 
     // Note that NSMapTableZeroingWeakMemory is used only to avoid receiving retain messages when not running under GC
-    classes   = [[NSMapTable alloc] initWithKeyOptions:NSMapTableZeroingWeakMemory | NSMapTableObjectPointerPersonality valueOptions:NSMapTableStrongMemory capacity:0];
+    classes   = [[NSMapTable alloc] initWithKeyOptions:NSMapTableWeakMemory | NSMapTableObjectPointerPersonality valueOptions:NSMapTableStrongMemory capacity:0];
     
     // We use the folowing NSMapTable because we need to have zeroing weak references to our keys as well as an object pointer personality 
-    instances = [[NSMapTable alloc] initWithKeyOptions:NSMapTableZeroingWeakMemory | NSMapTableObjectPointerPersonality valueOptions:NSMapTableStrongMemory capacity:0];     
+    instances = [[NSMapTable alloc] initWithKeyOptions:NSMapTableWeakMemory | NSMapTableObjectPointerPersonality valueOptions:NSMapTableStrongMemory capacity:0];
 }
 
 
@@ -93,7 +93,7 @@ static id executeMethod(FSMethod *method, FSSymbolTable *symbolTable, id receive
   return result;  
 }
 
-static void dispatch(ffi_cif *cif, void *result, void **args, void *userdata)
+static void dispatch(__unused ffi_cif *cif, void *result, void **args, void *userdata)
 {
   id             receiver    = *(id  *)args[0];
   SEL            selector    = *(SEL *)args[1];

@@ -521,7 +521,9 @@ static NSString *headerCellStringForBlock(FSBlock *block)
     }
     @catch (id exception) 
     {
-      if (signalError) NSBeginInformationalAlertSheet(@"An error occurred while sorting", @"OK", nil, nil, [tableView window], nil, NULL, NULL, NULL, @"%@", FSErrorMessageFromException(exception));
+      if (signalError) {
+        NSBeginInformationalAlertSheet(@"An error occurred while sorting", @"OK", nil, nil, [tableView window], nil, NULL, NULL, NULL, @"%@", FSErrorMessageFromException(exception));
+      }
     }
   }
   else
@@ -558,7 +560,9 @@ static NSString *headerCellStringForBlock(FSBlock *block)
       }
       @catch (id exception)
       {
-        if (signalError) NSBeginInformationalAlertSheet(@"An error occurred while sorting", @"OK", nil, nil, [tableView window], nil, NULL, NULL, NULL, @"%@", FSErrorMessageFromException(exception));
+        if (signalError) {
+          NSBeginInformationalAlertSheet(@"An error occurred while sorting", @"OK", nil, nil, [tableView window], nil, NULL, NULL, NULL, @"%@", FSErrorMessageFromException(exception));
+        }
       }
     }
   } 

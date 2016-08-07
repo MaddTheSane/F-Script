@@ -77,22 +77,22 @@
 - (double) doubleValue;
 - (BOOL) hasFrac_bool DEPRECATED_ATTRIBUTE; // deprecated
 //- (unsigned int) hash;
-- (id) initWithCoder:(NSCoder *)aDecoder;// NS_DESIGNATED_INITIALIZER;
-- (id)initWithChar:(char)val;
-- (id)initWithUnsignedChar:(unsigned char)val;
-- (id)initWithShort:(short)val;
-- (id)initWithUnsignedShort:(unsigned short)val;
-- (id)initWithInt:(int)val;
-- (id)initWithUnsignedInt:(unsigned int)val;
-- (id)initWithLong:(long)val;
-- (id)initWithUnsignedLong:(unsigned long)val;
-- (id)initWithLongLong:(long long)val;
-- (id)initWithUnsignedLongLong:(unsigned long long)val;
-- (id)initWithInteger:(NSInteger)val;
-- (id)initWithUnsignedInteger:(NSUInteger)val;
-- (id)initWithFloat:(float)val;
-- (id)initWithDouble:(double)val;// NS_DESIGNATED_INITIALIZER; // designated initializer
-- (id)initWithBool:(BOOL)val;
+- (id) initWithCoder:(NSCoder *)aDecoder NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithChar:(char)val;
+- (instancetype)initWithUnsignedChar:(unsigned char)val;
+- (instancetype)initWithShort:(short)val;
+- (instancetype)initWithUnsignedShort:(unsigned short)val;
+- (instancetype)initWithInt:(int)val;
+- (instancetype)initWithUnsignedInt:(unsigned int)val;
+- (instancetype)initWithLong:(long)val;
+- (instancetype)initWithUnsignedLong:(unsigned long)val;
+- (instancetype)initWithLongLong:(long long)val;
+- (instancetype)initWithUnsignedLongLong:(unsigned long long)val;
+- (instancetype)initWithInteger:(NSInteger)val;
+- (instancetype)initWithUnsignedInteger:(NSUInteger)val;
+- (instancetype)initWithFloat:(float)val;
+- (instancetype)initWithDouble:(double)val NS_DESIGNATED_INITIALIZER; // designated initializer
+- (instancetype)initWithBool:(BOOL)val;
 - (BOOL) isEqual:(id)anObject;
 
 // NSValue Class cluster primitives methods.
